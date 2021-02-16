@@ -1,0 +1,370 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	color: #696161;
+	font-family: 'segoe-wpn' sans-serif;
+}
+@font-face {
+font-family: "segoewpn"; 
+src: url("../fonts/segoe-wpn.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face {
+font-family: "segoewpnLight"; 
+src: url("../fonts/segoe-wp-light.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face {
+font-family: "segoewpnBold"; 
+src: url("../fonts/segoe-wp-bold.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face {
+font-family: "segoewpnBlack"; 
+src: url("../fonts/segoe-wpn-black.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+li {
+	list-style-type: none;
+}
+.img {
+	width: 100%;
+	height: 100%;
+}
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+	color: #696161;
+}
+.header {
+	border-bottom: 1px solid #e5e5e5;
+}
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	height
+}
+.logo {
+	font-size: 51px;
+	padding: 45px 5px;
+}
+.logo-circle {
+	background: #6dd025;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	position: relative;
+	top: 15px;
+}
+.logo-blog-color {
+	color: #313131;
+}
+.logo-metro-color {
+	color: #595959;
+}
+.logo p {
+	display: flex;
+}
+.header-content ul{
+	display: flex;
+	align-items: center;
+	font-size: 23px;
+}
+.header-content a {
+	align-items: center;
+	padding: 5px 25px;
+}
+.right-margin {
+	margin-right: 25px;
+}
+
+.right-margin:last-child {
+	margin-right: 0px;
+	padding-right: 0px;
+}
+.active-link {
+	background: #373737;
+	color: white
+}
+
+.hero-content {
+	height: 600px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.hero-header {
+	margin-left: 20px;
+}
+.hero-header a {
+	background: #373737;
+	color: white;
+	font-size: 23px;
+	padding: 10px 20px;
+}
+.hero-header h1 {
+	font-size: 61px;
+	font-weight: normal;
+}
+.hero-header h4 {
+	margin-bottom: 30px;
+	font-size: 47px;
+	font-weight: normal;
+}
+.hero-header span {
+	position: relative;
+	bottom: -1px;
+}
+.hero-img {
+	position: absolute;
+	right: 20px;
+	bottom: 50px;
+}
+.main-content {
+	display: flex;
+}
+.main-content-left-block {
+	display: flex;
+	max-width: 705px;
+	flex-wrap: wrap;
+}
+.gray-img {
+	width: 310px;
+	height: 245px;
+background: rgb(235,235,235);
+background: radial-gradient(circle, rgba(235,235,235,1) 0%, rgba(186,186,186,1) 66%, rgba(171,166,166,1) 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.gray-img svg {
+	margin: 5px;
+}
+.main-content-block {
+	padding: 0 10px;
+	margin-left: 20px;
+	height: 245px;
+}
+.main-header {
+	font-size: 30px;
+	flex-wrap: wrap;
+}
+.text {
+	font-size: 14px;
+	flex-wrap: wrap;
+}
+.main-content-block button{
+	width: 30px;
+	height: 40px;
+	background: #7c7d7c;
+	border: none;
+	margin: 0;
+	color: white;
+	font-size: 150%;
+}
+.main-content-block button:last-child {
+	background: #989998;
+}
+.buttons {
+	margin-top: 59px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.top-left-block {
+	flex-wrap: nowrap;
+	display: flex;
+}
+.information-block {
+	display: flex;
+	flex-wrap: wrap;
+}
+.box {
+	height: 220px;
+	width: 220px;
+	display: block;
+	margin: 15px 0;
+	margin-right: 15px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.box-header {
+	font-size: 26px; 
+	flex-wrap: wrap;
+	color: #736c6c;
+}
+.box-underheader {
+	margin: 5px 0;
+}
+.box-underheader span:first-child {
+	margin-right: 15px;
+}
+.box-text {
+	color: #949494;
+}
+.main-content-right-block {
+	flex-wrap: wrap;
+}
+.r-top-block {
+	width: 300px;
+	height: 250px;
+	border: 1px solid gray;
+	white-space: nowrap;
+	margin-bottom: 50px;
+}
+.r-top-block h6 {
+	font-size: 21px;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	color: #9ba08d;
+}
+.r-top-block h2 {
+	font-size: 39px;
+	color: #b8dc58;
+	display: flex;
+	justify-content: center;
+}
+.r-top-img {
+	margin-left: 20px;
+	padding: 5px;
+	flex-wrap: nowrap;
+}
+.smallimg {
+	position: relative;
+	left: -50px;
+	bottom: 5px;
+	z-index: 1;
+	width: 30%;
+	height: 30%;
+}
+.cssimg {
+	width: 40%;
+    height: 40%;
+    position: relative;
+    padding-bottom: 100px;
+    right: 45px;
+    top: 16px;
+}
+.buy-block {
+	background: #86e7f0;
+	width: 300px;
+	height: 250px;
+	color: white;
+	margin-bottom: 50px;
+}
+.headcircle {
+	background: #ef809f;
+	border: 6px solid white;
+	border-radius: 50%;
+	padding: 20px;
+	font-size: 71px;
+	height: 150px;
+	width: 150px;
+	position: relative;
+	bottom: 15px;
+}
+.headcircle span {
+	position: relative;
+	left: 6px;
+}
+.headcircle p {
+	font-size: 21px; 
+    position: relative;
+    left: 17px;
+}
+.headcircle-container {
+	display: flex;
+	justify-content: center;
+}
+.buy-block h2 {
+	display: flex;
+	justify-content: center;
+	font-size: 39px;
+}
+.buy-block h6 {
+	display: flex;
+    justify-content: center;
+    font-size: 17px;
+    flex-wrap: wrap;
+}
+.buy-block button {
+	display: flex;
+    margin: 0 auto;
+    border: none;
+    padding: 5px;
+    background: #58d1dc;
+    margin-top: 3px;
+    border-radius: 10%;
+    color: white;
+}
+.reg-block {
+	width: 300px;
+	background: #393a39;
+	flex-wrap: wrap;
+	color: white;
+}
+.reg-block h2 {
+	font-size: 27px;
+    margin: 0px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.reg-block h6 {
+	font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin: 0px 30px
+}
+form {
+	margin: ;
+}
+.reg-block input{
+	margin: 5px 30px;
+    padding: 6px;
+    width: 80%;
+}
+.reg-block button {
+	display: flex;
+    margin: 5px auto;
+    border: none;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5%;
+    background: #bb4465;
+}
+.undermark {
+	display: flex;
+    align-self: flex-end;
+    background: #bb4465;
+    height: 10px;
+    margin-top: 10px;
+}
+.footer {
+	margin-top: 30px;
+	background: #393a39;
+}
+.footer-content {
+	align-items: center;
+	height: 85px;
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-size: 16px;
+}
+.icons {
+    position: relative;
+    right: -400px;
+}
